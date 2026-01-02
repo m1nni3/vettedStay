@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VettedStay Bundles – Tenant Screening Packages</title>
+  <style>
+    body {margin:0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;color:#2c3e50;}
+    header{background:#fff;box-shadow:0 2px 10px rgba(0,0,0,.08);position:sticky;top:0;z-index:10}
+    nav{max-width:1200px;margin:auto;padding:1rem 2rem;display:flex;justify-content:space-between;align-items:center}
+    .logo span:first-child{color:#7cb342;font-weight:700;font-size:1.6rem}
+    .logo span:last-child{background:#2e7d99;color:#fff;padding:.2rem .7rem;border-radius:4px;font-weight:700}
+    .nav-links{list-style:none;display:flex;gap:2rem}
+    .nav-links a{text-decoration:none;color:#2c3e50;font-weight:500}
+
+    .hero{background:linear-gradient(135deg,#2e7d99,#236d87);color:#fff;text-align:center;padding:4rem 2rem}
+    .hero h1{font-size:3rem;margin-bottom:1rem}
+    .hero p{font-size:1.25rem;opacity:.95}
+
+    .bundles{max-width:1200px;margin:auto;padding:4rem 2rem}
+    .bundle-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:2rem}
+    .bundle{background:#fff;border-radius:18px;box-shadow:0 10px 25px rgba(0,0,0,.08);padding:2rem;position:relative}
+    .bundle.recommended{border:3px solid #7cb342}
+    .bundle.recommended::before{content:"MOST POPULAR";position:absolute;top:-14px;left:50%;transform:translateX(-50%);background:#7cb342;color:#fff;font-size:.75rem;font-weight:700;padding:.3rem .8rem;border-radius:20px}
+    .bundle h3{margin-bottom:.5rem}
+    .bundle p{color:#5a6c7d;margin-bottom:1rem}
+    .bundle ul{list-style:none;padding:0;margin:1.5rem 0}
+    .bundle ul li{padding:.5rem 0;position:relative;padding-left:1.5rem}
+    .bundle ul li::before{content:"✓";position:absolute;left:0;color:#7cb342;font-weight:700}
+    .price{font-size:2rem;font-weight:700;color:#2e7d99}
+    .old-price{text-decoration:line-through;color:#a0aec0;font-size:1.1rem;margin-right:.5rem}
+    .cta{margin-top:1.5rem;background:#7cb342;color:#fff;border:none;border-radius:40px;padding:1rem;width:100%;font-size:1.1rem;font-weight:600;cursor:pointer}
+
+    .compare{background:#f7fafc;padding:4rem 2rem}
+    .compare table{width:100%;max-width:1000px;margin:auto;border-collapse:collapse}
+    .compare th,.compare td{padding:1rem;border-bottom:1px solid #e2e8f0;text-align:center}
+    .compare th{background:#edf2f7}
+
+    footer{background:#2c3e50;color:#fff;text-align:center;padding:2rem;margin-top:4rem}
+
+    @media(max-width:768px){.hero h1{font-size:2.2rem}}
+  </style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <div class="logo"><span>Vetted</span><span>STAY</span></div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="bundles.html">Bundles</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Tenant Screening Bundles</h1>
+  <p>Save more with complete screening packages designed for every landlord</p>
+</section>
+
+<section class="bundles">
+  <div class="bundle-grid">
+
+    <div class="bundle" itemscope itemtype="https://schema.org/Product">
+      <h3 itemprop="name">Essential Tenant Check</h3>
+      <p itemprop="description">Basic protection for budget-conscious landlords.</p>
+      <ul>
+        <li>Identity Verification</li>
+        <li>Credit Profile</li>
+        <li>Fraud Screening</li>
+      </ul>
+      <div class="price"><span class="old-price">R500</span>R400</div>
+      <button class="cta">Choose Essential</button>
+    </div>
+
+    <div class="bundle recommended" itemscope itemtype="https://schema.org/Product">
+      <h3 itemprop="name">Standard Tenant Screening</h3>
+      <p itemprop="description">Most popular complete screening package.</p>
+      <ul>
+        <li>Identity Verification</li>
+        <li>Credit Profile</li>
+        <li>Rental History</li>
+        <li>Employment Verification</li>
+        <li>Fraud Screening</li>
+      </ul>
+      <div class="price"><span class="old-price">R850</span>R750</div>
+      <button class="cta">Choose Standard</button>
+    </div>
+
+    <div class="bundle" itemscope itemtype="https://schema.org/Product">
+      <h3 itemprop="name">Comprehensive Tenant Vetting</h3>
+      <p itemprop="description">Maximum protection for high-value properties.</p>
+      <ul>
+        <li>All Standard Checks</li>
+        <li>Criminal Record Check</li>
+        <li>Detailed Credit Report</li>
+        <li>Income & Affordability</li>
+        <li>Landlord References</li>
+      </ul>
+      <div class="price"><span class="old-price">R1200</span>R1100</div>
+      <button class="cta">Choose Premium</button>
+    </div>
+
+  </div>
+</section>
+
+<section class="compare">
+  <h2 style="text-align:center;margin-bottom:2rem">Compare Bundles</h2>
+  <table>
+    <tr><th>Feature</th><th>Essential</th><th>Standard</th><th>Comprehensive</th></tr>
+    <tr><td>Identity Verification</td><td>✓</td><td>✓</td><td>✓</td></tr>
+    <tr><td>Credit Profile</td><td>✓</td><td>✓</td><td>✓</td></tr>
+    <tr><td>Rental History</td><td></td><td>✓</td><td>✓</td></tr>
+    <tr><td>Employment Verification</td><td></td><td>✓</td><td>✓</td></tr>
+    <tr><td>Criminal Record</td><td></td><td></td><td>✓</td></tr>
+    <tr><td>Income & Affordability</td><td></td><td></td><td>✓</td></tr>
+  </table>
+</section>
+
+<!-- BUNDLE FAQ -->
+<section class="bundles" style="padding-top:0">
+  <h2 style="text-align:center;margin-bottom:2rem">Bundle FAQs</h2>
+  <details class="faq-item">
+    <summary>
+      <span class="faq-icon">📦</span>
+      <span>Can I upgrade bundles later?</span>
+      <span class="faq-caret">▼</span>
+    </summary>
+    <div>
+      <p>Yes. You can upgrade to a higher bundle at any time and only pay the difference.</p>
+    </div>
+  </details>
+  <details class="faq-item">
+    <summary>
+      <span class="faq-icon">💰</span>
+      <span>Are bundles cheaper than individual services?</span>
+      <span class="faq-caret">▼</span>
+    </summary>
+    <div>
+      <p>Yes. Bundles offer discounted pricing compared to purchasing each service separately.</p>
+    </div>
+  </details>
+  <details class="faq-item">
+    <summary>
+      <span class="faq-icon">⏱️</span>
+      <span>How long do bundle results take?</span>
+      <span class="faq-caret">▼</span>
+    </summary>
+    <div>
+      <p>Most bundle reports are delivered within 24–48 hours depending on selected checks.</p>
+    </div>
+  </details>
+</section>
+
+<section class="cta-strip">
+  <h2>Ready to screen your next tenant?</h2>
+  <p style="color:#5a6c7d;margin-bottom:2rem">Get started now or speak to our team for guidance</p>
+  <a href="contact.html" class="cta" style="display:inline-block;text-decoration:none">Contact Us</a>
+</section>
+
+<footer>
+  <p>&copy; 2025 VettedStay · Professional Tenant Screening</p>
+</footer>
+
+</body>
+</html>

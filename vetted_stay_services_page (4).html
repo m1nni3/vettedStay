@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VettedStay Services – Tenant Screening</title>
+  <style>
+    body {margin:0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;color:#2c3e50;}
+    header{background:#fff;box-shadow:0 2px 10px rgba(0,0,0,.08);position:sticky;top:0;z-index:10}
+    nav{max-width:1200px;margin:auto;padding:1rem 2rem;display:flex;justify-content:space-between;align-items:center}
+    .logo span:first-child{color:#7cb342;font-weight:700;font-size:1.6rem}
+    .logo span:last-child{background:#2e7d99;color:#fff;padding:.2rem .7rem;border-radius:4px;font-weight:700}
+    .nav-links{list-style:none;display:flex;gap:2rem}
+    .nav-links a{text-decoration:none;color:#2c3e50;font-weight:500}
+
+    .hero{background:linear-gradient(135deg,#2e7d99,#236d87);color:#fff;text-align:center;padding:4rem 2rem}
+    .hero h1{font-size:3rem;margin-bottom:1rem}
+    .hero p{font-size:1.25rem;opacity:.95}
+
+    .services{max-width:1200px;margin:auto;padding:4rem 2rem}
+    .services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:2rem}
+    .service{background:#fff;border-radius:16px;box-shadow:0 10px 25px rgba(0,0,0,.08);overflow:hidden}
+    .service img{width:100%;height:180px;object-fit:cover}
+    .service-content{padding:1.5rem}
+    .service h3{margin-bottom:.5rem}
+    .service p{color:#5a6c7d}
+    .badge{display:inline-block;margin-top:.75rem;background:#e6f4ea;color:#2f855a;font-weight:600;font-size:.85rem;padding:.3rem .7rem;border-radius:20px}
+
+    .cta-strip{background:#f7fafc;text-align:center;padding:4rem 2rem;margin-top:4rem}
+    .cta{background:#7cb342;color:#fff;border:none;border-radius:40px;padding:1rem 2.5rem;font-size:1.1rem;font-weight:600;cursor:pointer}
+
+    footer{background:#2c3e50;color:#fff;text-align:center;padding:2rem;margin-top:4rem}
+
+    @media(max-width:768px){.hero h1{font-size:2.2rem}}
+  </style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <div class="logo"><span>Vetted</span><span>STAY</span></div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="bundles.html">Bundles</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Tenant Screening Services</h1>
+  <p>Professional, POPIA-compliant checks to help you choose the right tenant with confidence</p>
+</section>
+
+<section class="services">
+  <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;margin-bottom:2.5rem">
+    <div>
+      <h2 style="font-size:2.2rem;margin-bottom:.5rem">All Screening Services</h2>
+      <p style="color:#5a6c7d">Select individual checks or build your own bundle</p>
+    </div>
+    <div>
+      <label style="font-weight:600;margin-right:.5rem">Filter:</label>
+      <select style="padding:.6rem 1rem;border-radius:8px;border:2px solid #e2e8f0">
+        <option>All Services</option>
+        <option>Identity & Background</option>
+        <option>Credit & Financial</option>
+        <option>Employment & Income</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="services-grid">
+
+    <div class="service" itemscope itemtype="https://schema.org/Service">
+      <img src="ChatGPT Image Dec 30, 2025, 06.png" alt="Identity verification" />
+      <div class="service-content">
+        <h3 itemprop="name">Tenant Identity Verification</h3>
+        <p itemprop="description">Verify tenant identity to ensure documentation is valid and authentic.</p>
+        <span class="badge">Instant Results</span>
+        <p style="margin-top:1rem;font-weight:600">R150</p>
+        <button class="cta" style="margin-top:1rem;width:100%">Select Service</button>
+      </div>
+    </div>
+
+    <div class="service" itemscope itemtype="https://schema.org/Service">
+      <img src="ChatGPT Image Dec 29, 2025, 11_31_16 PM.png" alt="Home Affairs verification" />
+      <div class="service-content">
+        <h3 itemprop="name">Home Affairs DHA Verification</h3>
+        <p itemprop="description">Government-verified identity checks via Home Affairs DHA databases.</p>
+        <span class="badge">Government Verified</span>
+        <p style="margin-top:1rem;font-weight:600">R150</p>
+        <button class="cta" style="margin-top:1rem;width:100%">Select Service</button>
+      </div>
+    </div>
+
+    <div class="service" itemscope itemtype="https://schema.org/Service">
+      <img src="ChatGPT Image Dec 30, 2025, 10_06_17 AM (2).png" alt="Credit profile" />
+      <div class="service-content">
+        <h3 itemprop="name">Tenant Credit Profile</h3>
+        <p itemprop="description">High-level overview of credit behaviour and payment history.</p>
+        <span class="badge">Financial Assessment</span>
+        <p style="margin-top:1rem;font-weight:600">R200</p>
+        <button class="cta" style="margin-top:1rem;width:100%">Select Service</button>
+      </div>
+    </div>
+
+    <div class="service" itemscope itemtype="https://schema.org/Service">
+      <img src="ChatGPT Image Dec 30, 2025, 10_24_38 AM.png" alt="Detailed credit report" />
+      <div class="service-content">
+        <h3 itemprop="name">Detailed Credit Report</h3>
+        <p itemprop="description">Comprehensive report including debts, judgments, and payment patterns.</p>
+        <span class="badge">Detailed Analysis</span>
+        <p style="margin-top:1rem;font-weight:600">R350</p>
+        <button class="cta" style="margin-top:1rem;width:100%">Select Service</button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- SERVICE FAQ -->
+<section class="services" style="padding-top:0">
+  <h2 style="font-size:2rem;margin-bottom:1.5rem">Service FAQs</h2>
+  <details class="faq-item">
+    <summary>
+      <span class="faq-icon">ℹ️</span>
+      <span>Can I order services individually?</span>
+      <span class="faq-caret">▼</span>
+    </summary>
+    <div>
+      <p>Yes. All services can be ordered individually, or combined into a discounted bundle.</p>
+    </div>
+  </details>
+  <details class="faq-item">
+    <summary>
+      <span class="faq-icon">⏱️</span>
+      <span>How quickly will I receive results?</span>
+      <span class="faq-caret">▼</span>
+    </summary>
+    <div>
+      <p>Most services are completed within 24–48 hours. Some checks return same-day results.</p>
+    </div>
+  </details>
+</section>
+
+<section class="cta-strip">
+  <h2>Prefer a complete screening package?</h2>
+  <p style="color:#5a6c7d;margin-bottom:2rem">Save time and money with our bundled tenant screening options</p>
+  <button class="cta">View Screening Bundles</button>
+</section>
+
+<footer>
+  <p>&copy; 2025 VettedStay · Professional Tenant Screening</p>
+</footer>
+
+</body>
+</html>

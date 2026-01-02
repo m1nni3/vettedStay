@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VettedStay – Tenant Screening Made Simple</title>
+  <style>
+    body {margin:0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;color:#2c3e50;}
+    header{background:#fff;box-shadow:0 2px 10px rgba(0,0,0,.08);position:sticky;top:0;z-index:10}
+    nav{max-width:1200px;margin:auto;padding:1rem 2rem;display:flex;justify-content:space-between;align-items:center}
+    .logo span:first-child{color:#7cb342;font-weight:700;font-size:1.6rem}
+    .logo span:last-child{background:#2e7d99;color:#fff;padding:.2rem .7rem;border-radius:4px;font-weight:700}
+    .nav-links{list-style:none;display:flex;gap:2rem}
+    .nav-links a{text-decoration:none;color:#2c3e50;font-weight:500}
+
+    /* HERO WITH IMAGE */
+    .hero{display:grid;grid-template-columns:1.2fr 1fr;gap:3rem;align-items:center;max-width:1200px;margin:auto;padding:4rem 2rem}
+    .hero h1{font-size:3rem;margin-bottom:1rem}
+    .hero p{font-size:1.25rem;color:#5a6c7d;margin-bottom:2rem}
+    .cta{background:#7cb342;color:#fff;border:none;border-radius:40px;padding:1rem 2.5rem;font-size:1.1rem;font-weight:600;cursor:pointer}
+    .hero img{width:100%;border-radius:18px;box-shadow:0 20px 40px rgba(0,0,0,.15)}
+
+    /* TRUST STRIP */
+    .trust{background:#f7fafc;padding:2.5rem 2rem}
+    .trust-grid{max-width:1100px;margin:auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:2rem;text-align:center}
+    .trust-item img{height:48px;margin-bottom:.8rem}
+    .trust-item p{font-weight:600}
+
+    /* VISUAL FEATURES */
+    .features{max-width:1200px;margin:auto;padding:4rem 2rem}
+    .feature-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:2rem}
+    .feature{background:#fff;border-radius:16px;box-shadow:0 10px 25px rgba(0,0,0,.08);overflow:hidden}
+    .feature img{width:100%;height:180px;object-fit:cover}
+    .feature div{padding:1.5rem}
+    .feature h3{margin-bottom:.5rem}
+    .feature p{color:#5a6c7d}
+
+    /* FAQ – MATCH ORIGINAL STYLE */
+    .faq-item{background:#fff;border:2px solid #e2e8f0;border-radius:8px;margin-bottom:1rem;overflow:hidden;transition:border-color .3s,box-shadow .3s}
+    .faq-item[open]{border-color:#7cb342;box-shadow:0 4px 10px rgba(0,0,0,.08)}
+    .faq-item summary{list-style:none;padding:1.5rem;background:#f7fafc;cursor:pointer;display:flex;align-items:center;gap:.75rem;font-weight:600;color:#2c3e50;position:relative}
+    .faq-item summary:hover{background:#e2e8f0}
+    .faq-item summary::-webkit-details-marker{display:none}
+    .faq-caret{margin-left:auto;font-size:.9rem;transition:transform .25s ease;color:#5a6c7d}
+    .faq-item summary:hover{background:#e2e8f0}
+    .faq-item summary::-webkit-details-marker{display:none}
+    .faq-icon{font-size:1.2rem}
+    .faq-item div{padding:0 1.5rem}
+    .faq-item[open] div{padding:1.5rem}
+    .faq-item[open] .faq-caret{transform:rotate(180deg)}
+    .faq-item p{color:#5a6c7d;line-height:1.7}
+
+    /* CTA STRIP */
+    .cta-strip{background:linear-gradient(135deg,#2e7d99,#236d87);color:#fff;text-align:center;padding:4rem 2rem}
+    .cta-strip h2{font-size:2.4rem;margin-bottom:1rem}
+
+    footer{background:#2c3e50;color:#fff;text-align:center;padding:2rem}
+
+    @media(max-width:900px){.hero{grid-template-columns:1fr}.hero h1{font-size:2.2rem}}
+  </style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <div class="logo"><span>Vetted</span><span>STAY</span></div>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Bundles</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div>
+    <h1>Smarter Tenant Screening for Confident Landlords</h1>
+    <p>Professional, POPIA‑compliant tenant vetting using official South African data sources – fast, affordable, and reliable.</p>
+    <button class="cta">Start Screening</button>
+  </div>
+  <!-- Replace src with one of the uploaded dashboard/tenant images -->
+  <img src="ChatGPT Image Dec 30, 2025, 10_24_38 AM.png" alt="Tenant screening dashboard" />
+</section>
+
+<!-- TRUST -->
+<section class="trust">
+  <div class="trust-grid">
+    <div class="trust-item">
+      <img src="ChatGPT Image Dec 29, 2025, 11_31_16 PM.png" alt="Verified" />
+      <p>Official Data Sources</p>
+    </div>
+    <div class="trust-item">
+      <img src="ChatGPT Image Dec 30, 2025, 06_06_09 AM.png" alt="Secure" />
+      <p>POPIA Compliant</p>
+    </div>
+    <div class="trust-item">
+      <img src="ChatGPT Image Dec 30, 2025, 06_32_10 AM.png" alt="Fast" />
+      <p>24–48hr Turnaround</p>
+    </div>
+    <div class="trust-item">
+      <img src="ChatGPT Image Dec 31, 2025, 02_09_38 PM.png" alt="Landlords" />
+      <p>Trusted by Landlords</p>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES PAGE -->
+<section class="features" id="services">
+  <h2 style="text-align:center;font-size:2.4rem;margin-bottom:1rem">Tenant Screening Services</h2>
+  <p style="text-align:center;color:#5a6c7d;margin-bottom:3rem">Choose individual checks or combine them into powerful screening bundles</p>
+
+  <div class="feature-grid">
+
+    <div class="feature">
+      <img src="ChatGPT Image Dec 30, 2025, 06.png" alt="Identity verification" />
+      <div>
+        <h3>Tenant Identity Verification</h3>
+        <p>Verify tenant identity through official records to ensure documentation is valid and authentic.</p>
+        <p style="font-weight:600;color:#7cb342;margin-top:.5rem">Instant Results</p>
+      </div>
+    </div>
+
+    <div class="feature">
+      <img src="ChatGPT Image Dec 29, 2025, 11_31_16 PM.png" alt="Home Affairs verification" />
+      <div>
+        <h3>Home Affairs DHA Verification</h3>
+        <p>Government-verified identity checks directly against Home Affairs DHA databases.</p>
+        <p style="font-weight:600;color:#7cb342;margin-top:.5rem">Government Verified</p>
+      </div>
+    </div>
+
+    <div class="feature">
+      <img src="ChatGPT Image Dec 30, 2025, 10_06_17 AM (2).png" alt="Credit profile" />
+      <div>
+        <h3>Tenant Credit Profile</h3>
+        <p>Quick credit overview showing payment behaviour and financial responsibility.</p>
+        <p style="font-weight:600;color:#7cb342;margin-top:.5rem">Financial Assessment</p>
+      </div>
+    </div>
+
+    <div class="feature">
+      <img src="ChatGPT Image Dec 30, 2025, 10_24_38 AM.png" alt="Detailed credit report" />
+      <div>
+        <h3>Detailed Credit Report</h3>
+        <p>Comprehensive credit report with full payment history, judgments, and debt exposure.</p>
+        <p style="font-weight:600;color:#7cb342;margin-top:.5rem">Detailed Analysis</p>
+      </div>
+    </div>
+
+    <div class="feature">
+      <img src="ChatGPT Image Dec 29, 2025, 11_31_35 P.png" alt="Rental history" />
+      <div>
+        <h3>Rental Payment Profile</h3>
+        <p>Track record of rental payments from previous landlords and agencies.</p>
+        <p style="font-weight:600;color:#7cb342;margin-top:.5rem">Payment Tracking</p>
+      </div>
+    </div>
+
+    <div class="feature">
+      <img src="ChatGPT Image Dec 31, 2025, 02_09_38 PM.png" alt="Employment verification" />
+      <div>
+        <h3>Employment Verification</h3>
+        <p>Confirm employment status, role, and tenure with current employers.</p>
+        <p style="font-weight:600;color:#7cb342;margin-top:.5rem">Job Verification</p>
+      </div>
+    </div>
+
+    <div class="feature">
+      <img src="ChatGPT Image Dec 30, 2025, 06_06_09 AM.png" alt="Income verification" />
+      <div>
+        <h3>Income & Affordability Assessment</h3>
+        <p>Verify income and calculate affordability using debt-to-income ratios.</p>
+        <p style="font-weight:600;color:#7cb342;margin-top:.5rem">Financial Capacity</p>
+      </div>
+    </div>
+
+    <div class="feature">
+      <img src="ChatGPT Image Dec 30, 2025, 06_32_10 AM.png" alt="Criminal record check" />
+      <div>
+        <h3>Criminal Record Check</h3>
+        <p>Consent-based criminal background screening using national databases.</p>
+        <p style="font-weight:600;color:#7cb342;margin-top:.5rem">Consent Required</p>
+      </div>
+    </div>
+
+    <div class="feature">
+      <img src="ChatGPT Image Dec 30, 2025, 06.png" alt="Fraud screening" />
+      <div>
+        <h3>Fraud & Risk Flags Screening</h3>
+        <p>Identify known fraud risks and red flags using trusted fraud databases.</p>
+        <p style="font-weight:600;color:#7cb342;margin-top:.5rem">Fraud Prevention</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- FAQ -->
+<!-- FAQ (Enhanced with Icons, Animation, SEO Schema) -->
+<section class="features" style="padding-top:2rem">
+  <h2 style="text-align:center;font-size:2.2rem;margin-bottom:1rem">Frequently Asked Questions</h2>
+  <p style="text-align:center;color:#5a6c7d;margin-bottom:2.5rem">Clear answers to help you screen with confidence</p>
+
+  <div style="max-width:800px;margin:auto">
+
+    <details class="faq-item" itemscope itemtype="https://schema.org/Question">
+      <summary>
+        <span class="faq-icon">📝</span>
+        <span itemprop="name">Do I need tenant consent for screening?</span>
+        <span class="faq-caret">▼</span>
+      </summary>
+      <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+        <p itemprop="text">Yes. Written or digital consent is required for all checks to ensure POPIA compliance and lawful data processing.</p>
+      </div>
+    </details>
+
+    <details class="faq-item" itemscope itemtype="https://schema.org/Question">
+      <summary>
+        <span class="faq-icon">📝</span>
+        <span itemprop="name">Do I need tenant consent for screening?</span>
+        <span class="faq-caret">▼</span>
+      </summary>
+      <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+        <p itemprop="text">Most reports are delivered within 24–48 hours, with some verifications completed the same day.</p>
+      </div>
+    </details>
+
+    <details class="faq-item" itemscope itemtype="https://schema.org/Question">
+      <summary>
+        <span class="faq-icon">📝</span>
+        <span itemprop="name">Do I need tenant consent for screening?</span>
+        <span class="faq-caret">▼</span>
+      </summary>
+      <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+        <p itemprop="text">Yes. We use official government, credit bureau, and verified third-party databases for accurate and reliable results.</p>
+      </div>
+    </details>
+
+    <details class="faq-item" itemscope itemtype="https://schema.org/Question">
+      <summary>
+        <span class="faq-icon">📝</span>
+        <span itemprop="name">Do I need tenant consent for screening?</span>
+        <span class="faq-caret">▼</span>
+      </summary>
+      <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+        <p itemprop="text">The Standard Screening bundle is the most popular. For high-risk or high-value properties, the Comprehensive package offers maximum protection.</p>
+      </div>
+    </details>
+
+    <!-- Mini CTA -->
+    <div style="margin-top:3rem;text-align:center;background:#f7fafc;padding:2rem;border-radius:16px">
+      <h3 style="margin-bottom:.5rem">Still have questions?</h3>
+      <p style="color:#5a6c7d;margin-bottom:1.2rem">Our team is happy to help you choose the right screening solution.</p>
+      <a href="#contact" class="cta" style="display:inline-block;text-decoration:none">Contact Us</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="cta-strip">
+  <h2>Affordable screening is just a click away</h2>
+  <button class="cta">View Screening Bundles</button>
+</section>
+
+<footer>
+  <p>&copy; 2025 VettedStay · Professional Tenant Screening</p>
+</footer>
+
+</body>
+</html>
